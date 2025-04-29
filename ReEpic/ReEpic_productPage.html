@@ -1,580 +1,998 @@
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Titan Epic Product Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titan Epic Product Page</title>
 
-  <!-- CustumStyle CSS  -->
-  <link href="" rel="stylesheet" />
-  <link href="https://github.com/OsakiTitan-Miji/Product/blob/main/CustomStyle.css" rel="stylesheet" />
+    <link href="https://ota-shawn.github.io/Products/globalProductDescription.css" rel="stylesheet" />
+    <link href="" rel="stylesheet" />
+    <link href="../CustomStyle.css" rel="stylesheet" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-  <!-- ReEpic CSS -->
-  <link href="https://github.com/OsakiTitan-Miji/Product/blob/main/ReEpic/ReEpic.css" rel="stylesheet" />
+    <link href="ReEpic.css" rel="stylesheet" />
 
-  <div class="ReEpic_wrapper">
+    <script>
+        const youtube_link = "https://youtu.be/MDq5dq3sGnY";
 
-    <!-- Main Image -->
-    <div class="ReEpic_mainVisual">
-      <div><img src="Product/1.Epic_lifestyle_main.png" alt="Epic_main"></div>
-    </div>
+        const imgs = [
+            {
+                'id': 'img-1',
+                'img_order': '1',
+                'img_name': '1.Epic_lifestyle_main',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Epic_lifestyle_main.png?v=1745957459'
+            },
+            {
+                'id': 'img-2',
+                'img_order': '2',
+                'img_name': '2.Epic_voice_command',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Epic_voice_command.png'
+            },
+            {
+                'id': 'img-3',
+                'img_order': '3',
+                'img_name': '3.Epic_touchscreen',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Epic_touchscreen.png'
+            },
+            {
+                'id': 'img-4',
+                'img_order': '4',
+                'img_name': '4.Epic_lumbar_aircell',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Epic_lumbar_aircell.png'
+            },
+            {
+                'id': 'img-5',
+                'img_order': '5',
+                'img_name': '5.Epic_3D',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Epic_3D.png'
+            },
+            {
+                'id': 'img-6',
+                'img_order': '6',
+                'img_name': '6.Epic_body_scan',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Epic_body_scan.png'
+            },
+            {
+                'id': 'img-7',
+                'img_order': '7',
+                'img_name': '7.Epic_icon_SL',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Epic_icon_SL.png'
+            },
+            {
+                'id': 'img-8',
+                'img_order': '8',
+                'img_name': '8.Epic_SL',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Epic_SL.png?v=1745957458'
+            },
+            {
+                'id': 'img-9',
+                'img_order': '9',
+                'img_name': '9.Epic_ZG',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Epic_ZG.png?v=1745957458'
+            },
+            {
+                'id': 'img-10',
+                'img_order': '10',
+                'img_name': '10.Epic_icon_space_saving',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Epic_icon_space_saving.png'
+            },
+            {
+                'id': 'img-11',
+                'img_order': '11',
+                'img_name': '11.Epic_space_saving',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Epic_space_saving.png?v=1745957458'
+            },
+            {
+                'id': 'img-12',
+                'img_order': '12',
+                'img_name': '12.Epic_aircell',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Epic_aircell.png?v=1745957458'
+            },
+            {
+                'id': 'img-13',
+                'img_order': '13',
+                'img_name': '13.Epic_heating',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Epic_heating.png?v=1745957458'
+            },
+            {
+                'id': 'img-14',
+                'img_order': '14',
+                'img_name': '14.Epic_icon_auto_massage_work_relief',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Epic_icon_auto_massage_work_relief.png'
+            },
+            {
+                'id': 'img-15',
+                'img_order': '15',
+                'img_name': '15.Epic_icon_auto_massage_recovery',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Epic_icon_auto_massage_recovery.png'
+            },
+            {
+                'id': 'img-16',
+                'img_order': '16',
+                'img_name': '16.Epic_icon_auto_massage_deep_tissue',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Epic_icon_auto_massage_deep_tissue.png'
+            },
+            {
+                'id': 'img-17',
+                'img_order': '17',
+                'img_name': '17.Epic_icon_auto_massage_rest_sleep',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Epic_icon_auto_massage_rest_sleep.png'
+            },
+            {
+                'id': 'img-18',
+                'img_order': '18',
+                'img_name': '18.Epic_icon_auto_massage_thai',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Epic_icon_auto_massage_thai.png'
+            },
+            {
+                'id': 'img-19',
+                'img_order': '19',
+                'img_name': '19.Epic_icon_auto_massage_gentle',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Epic_icon_auto_massage_gentle.png'
+            },
+            {
+                'id': 'img-20',
+                'img_order': '20',
+                'img_name': '20.Epic_icon_auto_massage_athletic',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Epic_icon_auto_massage_athletic.png'
+            },
+            {
+                'id': 'img-21',
+                'img_order': '21',
+                'img_name': '21.Epic_icon_auto_massage_vertebral',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Epic_icon_auto_massage_vertebral.png'
+            },
+            {
+                'id': 'img-22',
+                'img_order': '22',
+                'img_name': '22.Epic_icon_auto_massage_for_her',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Epic_icon_auto_massage_for_her.png'
+            },
+            {
+                'id': 'img-23',
+                'img_order': '23',
+                'img_name': '23.Epic_icon_auto_massage_for_him',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Epic_icon_auto_massage_for_him.png'
+            },
+            {
+                'id': 'img-24',
+                'img_order': '24',
+                'img_name': '24.Epic_icon_auto_massage_neck_shoulder',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Epic_icon_auto_massage_neck_shoulder.png'
+            },
+            {
+                'id': 'img-25',
+                'img_order': '25',
+                'img_name': '25.Epic_icon_auto_massage_waist_hip',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Epic_icon_auto_massage_waist_hip.png'
+            },
+            {
+                'id': 'img-26',
+                'img_order': '26',
+                'img_name': '26.Epic_icon_manual_massage_kneading',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Epic_icon_manual_massage_kneading.png'
+            },
+            {
+                'id': 'img-27',
+                'img_order': '27',
+                'img_name': '27.Epic_icon_manual_massage_knocking',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Epic_icon_manual_massage_knocking.png'
+            },
+            {
+                'id': 'img-28',
+                'img_order': '28',
+                'img_name': '28.Epic_icon_manual_massage_shiatsu',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Epic_icon_manual_massage_shiatsu.png'
+            },
+            {
+                'id': 'img-29',
+                'img_order': '29',
+                'img_name': '29.Epic_icon_manual_massage_tapping',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Epic_icon_manual_massage_tapping.png'
+            },
+            {
+                'id': 'img-30',
+                'img_order': '30',
+                'img_name': '30.Epic_icon_manual_massage_swedish',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Epic_icon_manual_massage_swedish.png'
+            },
+            {
+                'id': 'img-31',
+                'img_order': '31',
+                'img_name': '31.Epic_icon_manual_massage_rolling',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Epic_icon_manual_massage_rolling.png'
+            },
+            {
+                'id': 'img-32',
+                'img_order': '32',
+                'img_name': '32.Epic_foot_calf_massage_footrest_extension',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Epic_foot_calf_massage_footrest_extension.png?v=1745957458'
+            },
+            {
+                'id': 'img-33',
+                'img_order': '33',
+                'img_name': '33.Epic_side_controller_1',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Epic_side_controller-1.png'
+            },
+            {
+                'id': 'img-34',
+                'img_order': '34',
+                'img_name': '34.Epic_wireless_charger',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Epic_wireless_charger.png?v=1745957458'
+            },
+            {
+                'id': 'img-35',
+                'img_order': '35',
+                'img_name': '35.Epic_USB',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Epic_USB.png?v=1745957458'
+            },
+            {
+                'id': 'img-36',
+                'img_order': '36',
+                'img_name': '36.Epic_bluetooth_speaker_1',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Epic_bluetooth_speaker-1.png'
+            },
+            {
+                'id': 'img-37',
+                'img_order': '37',
+                'img_name': '37.Epic_LED',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Epic_LED.png?v=1745957458'
+            },
+            {
+                'id': 'img-38',
+                'img_order': '38',
+                'img_name': '38.Epic_dimension_front',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Epic_dimension_front.png?v=1745957458'
+            },
+            {
+                'id': 'img-39',
+                'img_order': '39',
+                'img_name': '39.Epic_dimension_side',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Epic_dimension_side.png'
+            },
+            {
+                'id': 'img-40',
+                'img_order': '40',
+                'img_name': '40.Epic_dimension_ZG',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Epic_dimension_ZG.png'
+            },
+            {
+                'id': 'img-41',
+                'img_order': '41',
+                'img_name': '41.Epic_minimum_doorway',
+                'img_src': 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Epic_minimum_doorway.png'
+            },
+            {
+                id: 'img-46',
+                img_order: '46',
+                img_name: '53.Epic_interaction_chair_everything',
+                img_src: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Epic_interaction_chair_everything.png?v=1745957458'
+            },
+            {
+                id: 'img-47',
+                img_order: '47',
+                img_name: '54.Epic_interaction_chair_black',
+                img_src: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.Epic_interaction_chair_black.png?v=1745957458'
+            },
+            {
+                id: 'img-48',
+                img_order: '48',
+                img_name: '55.Epic_interaction_chair_brown',
+                img_src: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Epic_interaction_chair_brown.png?v=1745957458'
+            },
+            {
+                id: 'img-49',
+                img_order: '49',
+                img_name: '56.Epic_interaction_chair_taupe',
+                img_src: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.Epic_interaction_chair_taupe.png?v=1745957458'
+            }
+        ];
 
-    <!-- Main Text -->
-    <div class="ReEpic_introText">
-      <div><strong>The TP-Epic 4D massage chair</strong> contains several luxurious features, such as intuitive voice
-        control, a touch screen controller, and a 4D massage mechanism to enhance your massage. Furthermore, the Epic
-        chair empowers you to create your own personalized features. The Epic delivers a personally tailored massage for
-        you every time you sit in it.</div>
-    </div>
+        const colorButtonsInfo = [
+            {
+                id: 'color-btn-everything',
+                dataImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Epic_interaction_chair_everything.png?v=1745957458',
+                bgImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.Epic_interaction_bar_color_everything.png?v=1745958124'
+            },
+            {
+                id: 'color-btn-black',
+                dataImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.Epic_interaction_chair_black.png?v=1745957458',
+                bgImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.Epic_interaction_bar_color_black.png?v=1745958124'
+            },
+            {
+                id: 'color-btn-brown',
+                dataImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Epic_interaction_chair_brown.png?v=1745957458',
+                bgImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.Epic_interaction_bar_color_brown.png?v=1745958124'
+            },
+            {
+                id: 'color-btn-taupe',
+                dataImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.Epic_interaction_chair_taupe.png?v=1745957458',
+                bgImg: 'https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.Epic_interection_bar_color_taupe_selected.png?v=1745957457'
+            }
+        ];
 
-    <!-- Interaction -->
-    <div class="ReEpic_interactionSection">
-      <div class="ReEpic_sliderContainer">
-        <!-- Left Right Arrows -->
-        <div class="ReEpic_arrow left">‹</div>
-        <div class="ReEpic_sliderTrack">
-          <div class="ReEpic_slide"><img src="Product/53.Epic_interaction_chair_everything.png" alt="Everything"></div>
-          <div class="ReEpic_slide"><img src="Product/54.Epic_interaction_chair_black.png" alt="Black"></div>
-          <div class="ReEpic_slide"><img src="Product/55.Epic_interaction_chair_brown.png" alt="Brown"></div>
-          <div class="ReEpic_slide"><img src="Product/56.Epic_interaction_chair_taupe.png" alt="Taupe"></div>
-        </div>
-        <div class="ReEpic_arrow right">›</div>
-
-        <!-- Gradient -->
-        <div class="ReEpic_gradient left"></div>
-        <div class="ReEpic_gradient right"></div>
-      </div>
-
-      <div class="ReEpic_productName">Titan TP-Epic 4D</div>
-
-      <!-- Color Button -->
-      <div class="ReEpic_buttonWrapper">
-        <div class="ReEpic_colorSelector">
-          <div class="ReEpic_colorButton active" data-img="Product/53.Epic_interaction_chair_everything.png"
-            data-index="0" style="background-image: url('Product/45.Epic_interaction_bar_color_everything.png');">
-          </div>
-          <div class="ReEpic_colorButton" data-img="Product/54.Epic_interaction_chair_black.png" data-index="1"
-            style="background-image: url('Product/46.Epic_interaction_bar_color_black.png');">
-          </div>
-          <div class="ReEpic_colorButton" data-img="Product/55.Epic_interaction_chair_brown.png" data-index="2"
-            style="background-image: url('Product/47.Epic_interaction_bar_color_brown.png');">
-          </div>
-          <div class="ReEpic_colorButton" data-img="Product/56.Epic_interaction_chair_taupe.png" data-index="3"
-            style="background-image: url('Product/48.Epic_interaction_bar_color_taupe.png');">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Feature Card -->
-    <div class="ReEpic_featureCardsWrapper">
-      <div class="ReEpic_featureCards left">
-        <!-- Voice command -->
-        <div class="ReEpic_featureCard">
-          <img src="Product/2.Epic_voice_command.png" class="ReEpic_featureCardImage" alt="Voice Command" />
-          <div class="ReEpic_featureCardText">
-            <div>
-              Epic’s convenient <strong>voice command</strong> feature allows for easy control of the chair without use
-              of
-              buttons or a touch screen. Simply give a command and the chair will respond accordingly, eliminating the
-              need for manual adjustments.
-            </div>
-            <div class="large-margin-3"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ReEpic_featureCards right">
-        <!-- Touchscreen -->
-        <div class="ReEpic_featureCard">
-          <img src="Product/3.Epic_touchscreen.png" class="ReEpic_featureCardImage" alt="Touchscreen" />
-          <div class="ReEpic_featureCardText">
-            <div>
-              The TP-Epic 4D chair's remote control is now equipped with a <strong>touchscreen</strong> interface for
-              effortless navigation and adjustment of settings.
-            </div>
-            <div style="margin-bottom: 13.5rem;"></div>
-          </div>
-        </div>
-
-        <!-- lumbar function -->
-        <div class="ReEpic_featureCard">
-          <img src="Product/4.Epic_lumbar_aircell.png" class="ReEpic_featureCardImage" alt="Lumbar air-cell" />
-          <div class="ReEpic_featureCardText">
-            <div>
-              One of the most overlooked portions of modern massages is in the lumbar. The Epic pays close attention to
-              your back with its proven <strong>lumbar function</strong>.
-            </div>
-            <div style="margin-bottom: 14.5rem;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Black Background -->
-    <div class="ReEpic_blackWrapper">
-      <!-- 4D Massage -->
-      <div class="ReEpic_blackBlockWrapper gradientOverlayWrapper">
-        <div class="ReEpic_blackBlock reverse">
-          <div class="ReEpic_blackImage">
-            <img src="Product/5.Epic_3D.png" alt="4D Massage System">
-          </div>
-          <div class="ReEpic_blackText" style="z-index: 10;">
-            <div class="ReEpic_blackText title">
-              <strong>BREAKTHROUGH</strong><br>
-              <span class="blue">4D MASSAGE</span>
-            </div>
-            <div>
-              Introducing the newest and most sophisticated massage system that focuses on the neck and shoulder region.
-              This <span class="deepBlue">advanced deep tissue</span> technology provides a unique massage that will
-              refresh your body like never before.
-            </div>
-          </div>
-          <div class="ReEpic_gradientOverlayTop"></div>
-        </div>
-      </div>
-
-      <!-- Body Scan -->
-      <div class="ReEpic_blackBlock">
-        <div class="ReEpic_blackImage">
-          <img src="Product/6.Epic_body_scan.png" alt="Body Scan System">
-        </div>
-        <div class="ReEpic_blackText">
-          <div class="ReEpic_blackText title"><strong>SMART</strong><br><span class="blue">BODY SCAN</span><br><strong>
-              SYSTEM</strong></div>
-          <div>The TP-Epic 4D chair will start a body scan every time the chair is on.
-            This body scan ensures that the massage will be <span class="deepBlue">exclusive to you</span>.</div>
-        </div>
-      </div>
-
-      <div class="ReEpic_verticalInfoWrapper">
-        <!-- SL-Track -->
-        <div class="ReEpic_verticalInfoBlock">
-          <div class="ReEpic_verticalInfoIcon">
-            <img src="Product/7.Epic_icon_SL.png" alt="SL Icon" />
-          </div>
-          <div class="ReEpic_verticalInfoText">
-            <div class="title">
-              <span class="blue">SL-TRACK</span> SYSTEM
-            </div>
-            <div>
-              By utilizing a <span class="deepBlue">scientifically-designed SL-Track</span>, the massage chair rollers
-              can travel seamlessly from the top of your neck down to the bottom of your hamstrings, providing a
-              comprehensive and holistic massage experience. The SL-Track is also capable of spot or partial massage.
-            </div>
-          </div>
-          <div class="ReEpic_verticalInfoImage">
-            <img src="Product/8.Epic_SL.png" alt="SL-Track Image" />
-          </div>
-        </div>
-
-        <div class="large-margin-2"></div>
-
-        <!-- Zero Gravity -->
-        <div class="ReEpic_verticalInfoBlock">
-          <div class="ReEpic_verticalInfoText">
-            <div class="title">
-              <span class="blue">ZERO GRAVITY</span> RECLINING
-            </div>
-            <div>
-              The Zero-Gravity Reclining increases blood circulation throughout the body by dispersing gravitational
-              forces. The Epic’s Zero Gravity Reclining technology is based on NASA’s relaxation theory.
-            </div>
-          </div>
-          <div class="ReEpic_verticalInfoImage">
-            <img src="Product/9.Epic_ZG.png" alt="Zero Gravity Image" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Space-Saving -->
-      <div class="ReEpic_blackBlockWrapper gradientOverlayWrapper">
-        <div class="ReEpic_blackBlock reverse">
-          <div class="ReEpic_blackImage">
-            <img src="Product/11.Epic_space_saving.png" alt="Space Saving Feature">
-          </div>
-          <div class="ReEpic_blackText" style="z-index: 10;">
-            <div class="ReEpic_verticalInfoIcon">
-              <img src="Product/10.Epic_icon_space_saving.png" alt="Space-Saving Icon">
-            </div>
-            <div class="ReEpic_blackText title"><span class="blue">SPACE-SAVING</span><br><strong>DESIGN</strong></div>
-            <div>
-              The Epic chair's design only needs <span class="deepBlue">6 inches</span> from the wall for full recline,
-              fitting into tight spaces without losing functionality.
-            </div>
-          </div>
-          <div class="ReEpic_gradientOverlay"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="ReEpic_iconWrapper" style="margin-top: 0;">
-      <div class="ReEpic_infoRoundedWrapper">
-        <!-- Aircell -->
-        <div class="ReEpic_infoBlock">
-          <div class="ReEpic_infoImage">
-            <img src="Product/12.Epic_aircell.png" alt="Aircell Massage Zones">
-          </div>
-          <div class="ReEpic_infoText">
-            <div class="title">
-              <span class="blue">36 Cell</span><br><strong>Full Body<br>Air Massage</strong>
-            </div>
-            <div>
-              The TP-Epic 4D chair integrates <span class="blue">36 air cells</span> throughout the entire chair to
-              expel body strain.
-              The chair endeavors to provide impeccable compression therapy with every massage.
-            </div>
-          </div>
-        </div>
-
-        <div class="ReEpic_infoDivider"></div>
-
-        <!-- Heating Zones -->
-        <div class="ReEpic_infoBlock">
-          <div class="ReEpic_infoText">
-            <div class="title">
-              <span class="red"><strong>Dual Heating</strong></span><br>Zones
-            </div>
-            <div>
-              Relax and release stress with the TP-Epic 4D heating system. The heating uses
-              <span class="red">dual infrared heating coils</span> to effectively warm and soothe tension along the
-              lower back.
-            </div>
-          </div>
-          <div class="ReEpic_infoImage">
-            <img src="Product/13.Epic_heating.png" alt="Dual Heating Zones">
-          </div>
-        </div>
-      </div>
-
-      <!-- 12 Auto Massage Modes -->
-      <div class="ReEpic_autoMassageModes">
-        <div class="ReEpic_autoMassageTitle">12 AUTO MASSAGE MODES</div>
-
-        <div class="ReEpic_autoMassageGrid">
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/14.Epic_icon_auto_massage_work_relief.png" alt="Work Relief" />
-            <div class="label">WORK RELIEF</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/15.Epic_icon_auto_massage_recovery.png" alt="Recovery" />
-            <div class="label">RECOVERY</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/16.Epic_icon_auto_massage_deep_tissue.png" alt="Deep Tissue" />
-            <div class="label">DEEP TISSUE</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/17.Epic_icon_auto_massage_rest_sleep.png" alt="Rest & Sleep" />
-            <div class="label">REST & SLEEP</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/18.Epic_icon_auto_massage_thai.png" alt="Thai" />
-            <div class="label">THAI</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/19.Epic_icon_auto_massage_gentle.png" alt="Gentle" />
-            <div class="label">GENTLE</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/20.Epic_icon_auto_massage_athletic.png" alt="Athletic" />
-            <div class="label">ATHLETIC</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/21.Epic_icon_auto_massage_vertebral.png" alt="Vertebral" />
-            <div class="label">VERTEBRAL</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/22.Epic_icon_auto_massage_for_her.png" alt="For Her" />
-            <div class="label">FOR HER</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/23.Epic_icon_auto_massage_for_him.png" alt="For Him" />
-            <div class="label">FOR HIM</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/24.Epic_icon_auto_massage_neck_shoulder.png" alt="Neck & Shoulder" />
-            <div class="label">NECK & SHOULDER</div>
-          </div>
-          <div class="ReEpic_autoMassageItem">
-            <img src="Product/25.Epic_icon_auto_massage_waist_hip.png" alt="Waist & Hip" />
-            <div class="label">WAIST & HIP</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6 Manual Massage Modes -->
-      <div class="ReEpic_manualMassageModes">
-        <div class="ReEpic_manualMassageTitle">6 MANUAL MASSAGE MODES</div>
-
-        <div class="ReEpic_manualMassageGrid">
-          <div class="ReEpic_manualMassageItem">
-            <img src="Product/26.Epic_icon_manual_massage_kneading.png" alt="Kneading" />
-            <div class="label">KNEADING</div>
-          </div>
-          <div class="ReEpic_manualMassageItem">
-            <img src="Product/27.Epic_icon_manual_massage_knocking.png" alt="Knocking" />
-            <div class="label">KNOCKING</div>
-          </div>
-          <div class="ReEpic_manualMassageItem">
-            <img src="Product/28.Epic_icon_manual_massage_shiatsu.png" alt="Shiatsu" />
-            <div class="label">SHIATSU</div>
-          </div>
-          <div class="ReEpic_manualMassageItem">
-            <img src="Product/29.Epic_icon_manual_massage_tapping.png" alt="Tapping" />
-            <div class="label">TAPPING</div>
-          </div>
-          <div class="ReEpic_manualMassageItem">
-            <img src="Product/30.Epic_icon_manual_massage_swedish.png" alt="Swedish" />
-            <div class="label">SWEDISH</div>
-          </div>
-          <div class="ReEpic_manualMassageItem">
-            <img src="Product/31.Epic_icon_manual_massage_rolling.png" alt="Rolling" />
-            <div class="label">ROLLING</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Foot & Calf Massage / Ultra Long Extension -->
-    <div class="ReEpic_overlaySection ReEpic_overlayImageWrapper">
-      <img src="Product/32.Epic_foot_calf_massage_footrest_extension.png" alt="Foot & Calf Massage"
-        class="ReEpic_overlayImage">
-
-      <div class="ReEpic_overlayTextBlock">
-        <div class="ReEpic_overlayText">
-          <div class="title">
-            <span class="blue">Foot & Calf</span><br><strong>Massage</strong>
-          </div>
-          <div>
-            The Epic features a crucial foot and calf massage function. It includes two rollers
-            dedicated to massaging each foot and one roller for the calf. These rollers ensure an
-            <span class="blue">exhaustive and satisfying massage</span> experience.
-          </div>
-        </div>
-
-        <div class="ReEpic_overlayText">
-          <div class="title">
-            <span class="blue">Ultra Long</span><br><strong>Extension</strong>
-          </div>
-          <div>
-            The Epic chair is created with all users in consideration. It is designed to suit individuals
-            with varying body types and heights, featuring an automatic spring-loaded Extendable Footrest
-            that can extend up to <span class="blue">8.5 inches</span> for maximum comfort.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="ReEpic_quickAccessWrapper">
-
-      <div class="ReEpic_quickAccessText">
-        <div class="ReEpic_quickAccessTitle">Quick Access Panel</div>
-        <div class="ReEpic_quickAccessList">
-          <div class="column">
-            <div><span class="circle">1</span> ON/OFF</div>
-            <div><span class="circle">2</span> LIGHT SWITCH</div>
-            <div><span class="circle">3</span> HEATING</div>
-            <div><span class="circle">4</span> AUTO MODE</div>
-          </div>
-          <div class="column">
-            <div><span class="circle">5</span> BACKREST UP/DOWN</div>
-            <div><span class="circle">6</span> LEG EXTEND/RETRACT</div>
-            <div><span class="circle">7</span> AIR MASSAGE</div>
-            <div><span class="circle">8</span> ZERO-G</div>
-          </div>
-        </div>
-      </div>
-      <div class="ReEpic_quickAccessImage">
-        <img src="Product/33.Epic_side_controller-1.png" alt="Quick Access Panel" class="ReEpic_quickAccessImage" />
-      </div>
-    </div>
-
-    <div class="ReEpic_lastSection">
-      <!-- Wireless Charger + USB Charger -->
-      <div class="ReEpic_dualFeatureWrapper">
-        <div class="ReEpic_featurePair">
-          <img src="Product/34.Epic_wireless_charger.png" alt="Wireless Charger" />
-          <div class="textBlock">
-            <div class="chargerText">
-              <span class="title"><strong>Wireless Charger.</strong></span>
-              Place the phone on the wireless charging pad for a convenient, hassle-free experience, enabling users to
-              power up their devices.
-            </div>
-          </div>
-        </div>
-        <div class="ReEpic_featurePair">
-          <img src="Product/35.Epic_USB.png" alt="USB Charger" />
-          <div class="textBlock">
-            <div class="desc">
-              <span class="title"><strong>USB Charger.</strong></span>
-              It is located on the side of the chair for easy reach. Relax and enjoy an imperative time for self care as
-              your device charges.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bluetooth Speaker + LED -->
-      <div class="ReEpic_lastBox">
-        <div class="ReEpic_whiteBox">
-          <div class="ReEpic_infoBlock">
-            <div class="ReEpic_infoImage">
-              <img src="Product/36.Epic_bluetooth_speaker-1.png" alt="Bluetooth Speakers">
-            </div>
-            <div class="ReEpic_infoText">
-              <div class="title">
-                <span class="blue">Bluetooth</span><br><strong>Speakers</strong>
-              </div>
-              <div>
-                Enjoy listening to your preferred music, podcasts, or soothing sounds via Epic’s crystal-clear,
-                high-fidelity, and surround sound
-                <span class="blue">Bluetooth speakers</span>.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ReEpic_whiteBox">
-          <div class="ReEpic_infoBlock">
-            <div class="ReEpic_infoImage">
-              <img src="Product/37.Epic_LED-1.png" alt="LED Lighting">
-            </div>
-            <div class="ReEpic_infoText">
-              <div class="title">
-                <span class="blue">LED</span><br><strong>Lighting Detail</strong>
-              </div>
-              <div>
-                Savor your massage with the <span class="blue">perfect lighting</span>. Now you can turn off all the
-                lights and truly focus on your massage in the TP-Epic 4D.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Dimension -->
-      <div class="ReEpic_dimensionSection">
-        <div class="ReEpic_manualMassageTitle">DIMENSION</div>
-        <div class="ReEpic_dimensionLayout">
-          <div class="ReEpic_dimensionLeft">
-            <img src="Product/38.Epic_dimension_front.png" alt="Dimension Front" />
-          </div>
-          <div class="ReEpic_dimensionRight">
-            <img src="Product/39.Epic_dimension_side.png" alt="Dimension Side" />
-            <img src="Product/40.Epic_dimension_ZG.png" alt="Dimension Zero-Gravity" />
-          </div>
-        </div>
-      </div>
-
-      <div class="ReEpic_doorwaySection">
-        <div class="ReEpic_manualMassageTitle">MINIMUM DOORWAY</div>
-        <div class="ReEpic_doorwayWrapper">
-          <div class="ReEpic_doorwayImage">
-            <img src="Product/41.Epic_minimum_doorway.png" alt="Minimum Doorway" />
-          </div>
-          <div class="ReEpic_doorwayText">
-            <div class="guideTitle"><strong>Measuring Guide</strong></div>
-            <ul>
-              <li>Calculate the doorway width by subtracting 1 inch from the smallest inner width of the door frame. (1/2 inch from each side)</li>
-              <li>Please use a standard measuring tape to measure the doorway.</li>
-              <li>If the door cannot be fully opened, open it as much as possible and measure the width from the edge of the door hinge.</li>
-              <li>If there is a rounded curve on the wall, calculate the inner width based on the most protruding point of the wall.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <script>
-    const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
-    const mainVisual = document.querySelector('.ReEpic_mainVisual');
-    const slides = document.querySelectorAll('.ReEpic_slide');
-    const arrows = document.querySelectorAll('.ReEpic_arrow');
-    const sliderTrack = document.querySelector('.ReEpic_sliderTrack');
-    const productNameEl = document.querySelector('.ReEpic_productName');
-    let currentSlide = 0;
-
-    // Slide Function
-    function showSlide(index) {
-      const isWrappingForward = currentSlide === slides.length - 1 && index === 0;
-      const isWrappingBackward = currentSlide === 0 && index === slides.length - 1;
-
-      if (isWrappingForward) {
-        // Taupe(3) → Everything(0)
-        sliderTrack.style.transition = 'none';
-        sliderTrack.style.transform = `translateX(${100}%)`;
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            sliderTrack.style.transition = 'transform 0.5s ease';
-            sliderTrack.style.transform = `translateX(${0}%)`;
-          });
+        document.addEventListener("DOMContentLoaded", () => {
+            imgs.forEach(({ id, img_src }) => {
+                const el = document.getElementById(id);
+                if (el) el.src = img_src;
+            });
         });
-      } else if (isWrappingBackward) {
-        // Everything(0) → Taupe(3)
-        sliderTrack.style.transition = 'none';
-        sliderTrack.style.transform = `translateX(${-400}%)`;
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            sliderTrack.style.transition = 'transform 0.5s ease';
-            sliderTrack.style.transform = `translateX(${-index * 100}%)`;
-          });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            colorButtonsInfo.forEach(({ id, dataImg, bgImg }) => {
+                const btn = document.getElementById(id);
+                if (btn) {
+                    btn.setAttribute('data-img', dataImg);
+                    btn.style.backgroundImage = `url('${bgImg}')`;
+                }
+            });
         });
-      } else {
-        
-        const offset = -index * 100;
-        sliderTrack.style.transition = 'transform 0.5s ease';
-        sliderTrack.style.transform = `translateX(${offset}%)`;
-      }
 
-      slides.forEach(slide => slide.classList.remove('active'));
-      slides[index].classList.add('active');
+    </script>
 
-      colorButtons.forEach(btn => btn.classList.remove('active'));
-      colorButtons[index].classList.add('active');
 
-      const newImgPath = colorButtons[index].getAttribute('data-img');
-      if (newImgPath) {
-        mainVisual.style.backgroundImage = `url('${newImgPath}')`;
-      }
+<body>
 
-      const names = [
-        'Titan TP-Epic 4D',
-        'Titan TP-Epic 4D Black',
-        'Titan TP-Epic 4D Brown',
-        'Titan TP-Epic 4D Taupe'
-      ];
-      productNameEl.textContent = names[index];
+    <div class="ReEpic_wrapper">
 
-      currentSlide = index;
-    }
+        <div class="ReEpic_mainVisual">
+            <div><img id="img-1" alt="Epic_main"></div>
+        </div>
 
-    window.addEventListener('DOMContentLoaded', () => {
-      showSlide(0);
-    });
+        <div class="ReEpic_introText">
+            <div><strong>The TP-Epic 4D massage chair</strong> contains several luxurious features, such as intuitive
+                voice
+                control, a touch screen controller, and a 4D massage mechanism to enhance your massage. Furthermore, the
+                Epic
+                chair empowers you to create your own personalized features. The Epic delivers a personally tailored
+                massage for
+                you every time you sit in it.</div>
+        </div>
 
-    // Arrow Click Event
-    arrows.forEach(arrow => {
-      arrow.addEventListener('click', () => {
-        const isLeft = arrow.classList.contains('left');
-        const newIndex = isLeft
-          ? (currentSlide === 0 ? slides.length - 1 : currentSlide - 1)
-          : (currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
-        showSlide(newIndex);
-      });
-    });
+        <div class="ReEpic_interactionSection">
+            <div class="ReEpic_sliderContainer">
 
-    // Button Click Event
-    colorButtons.forEach((button, index) => {
-      button.addEventListener('click', () => {
-        showSlide(index);
-      });
-    });
-  </script>
+                <div class="ReEpic_arrow left">‹</div>
+                <div class="ReEpic_sliderTrack">
+                    <div class="ReEpic_slide"><img id="img-46" alt="Everything"></div>
+                    <div class="ReEpic_slide"><img id="img-47" alt="Black"></div>
+                    <div class="ReEpic_slide"><img id="img-48" alt="Brown"></div>
+                    <div class="ReEpic_slide"><img id="img-49" alt="Taupe"></div>
+                </div>
+                <div class="ReEpic_arrow right">›</div>
 
+                <div class="ReEpic_gradient left"></div>
+                <div class="ReEpic_gradient right"></div>
+            </div>
+
+            <div class="ReEpic_productName">Titan TP-Epic 4D</div>
+
+            <div class="ReEpic_buttonWrapper">
+                <div class="ReEpic_colorSelector">
+                    <div id="color-btn-everything" class="ReEpic_colorButton active" data-index="0"></div>
+                    <div id="color-btn-black" class="ReEpic_colorButton" data-index="1"></div>
+                    <div id="color-btn-brown" class="ReEpic_colorButton" data-index="2"></div>
+                    <div id="color-btn-taupe" class="ReEpic_colorButton" data-index="3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ReEpic_featureCardsWrapper">
+            <div class="ReEpic_featureCards left">
+                <div class="ReEpic_featureCard">
+                    <img id="img-2" class="ReEpic_featureCardImage" alt="Voice Command" />
+                    <div class="ReEpic_featureCardText">
+                        <div>
+                            Epic’s convenient <strong>voice command</strong> feature allows for easy control of the
+                            chair without use
+                            of
+                            buttons or a touch screen. Simply give a command and the chair will respond accordingly,
+                            eliminating the
+                            need for manual adjustments.
+                        </div>
+                        <div class="large-margin-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_featureCards right">
+                <div class="ReEpic_featureCard">
+                    <img id="img-3" class="ReEpic_featureCardImage" alt="Touchscreen" />
+                    <div class="ReEpic_featureCardText">
+                        <div>
+                            The TP-Epic 4D chair's remote control is now equipped with a <strong>touchscreen</strong>
+                            interface for
+                            effortless navigation and adjustment of settings.
+                        </div>
+                        <div style="margin-bottom: 13.5rem;"></div>
+                    </div>
+                </div>
+
+                <div class="ReEpic_featureCard">
+                    <img id="img-4" class="ReEpic_featureCardImage" alt="Lumbar air-cell" />
+                    <div class="ReEpic_featureCardText">
+                        <div>
+                            One of the most overlooked portions of modern massages is in the lumbar. The Epic pays close
+                            attention to
+                            your back with its proven <strong>lumbar function</strong>.
+                        </div>
+                        <div style="margin-bottom: 14.5rem;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ReEpic_blackWrapper">
+            <!-- 4D Massage -->
+            <div class="ReEpic_blackBlockWrapper gradientOverlayWrapper">
+                <div class="ReEpic_blackBlock reverse">
+                    <div class="ReEpic_blackImage">
+                        <img id="img-5" alt="4D Massage System">
+                    </div>
+                    <div class="ReEpic_blackText" style="z-index: 10;">
+                        <div class="ReEpic_blackText title">
+                            <strong>BREAKTHROUGH</strong><br>
+                            <span class="blue">4D MASSAGE</span>
+                        </div>
+                        <div>
+                            Introducing the newest and most sophisticated massage system that focuses on the neck and
+                            shoulder region.
+                            This <span class="deepBlue">advanced deep tissue</span> technology provides a unique massage
+                            that will
+                            refresh your body like never before.
+                        </div>
+                    </div>
+                    <div class="ReEpic_gradientOverlayTop"></div>
+                </div>
+            </div>
+
+            <div class="ReEpic_blackBlock">
+                <div class="ReEpic_blackImage">
+                    <img id="img-6" alt="Body Scan System">
+                </div>
+                <div class="ReEpic_blackText">
+                    <div class="ReEpic_blackText title"><strong>SMART</strong><br><span class="blue">BODY
+                            SCAN</span><br><strong>
+                            SYSTEM</strong></div>
+                    <div>The TP-Epic 4D chair will start a body scan every time the chair is on.
+                        This body scan ensures that the massage will be <span class="deepBlue">exclusive to you</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_verticalInfoWrapper">
+                <div class="ReEpic_verticalInfoBlock">
+                    <div class="ReEpic_verticalInfoIcon">
+                        <img id="img-7" alt="SL Icon" />
+                    </div>
+                    <div class="ReEpic_verticalInfoText">
+                        <div class="title">
+                            <span class="blue">SL-TRACK</span> SYSTEM
+                        </div>
+                        <div>
+                            By utilizing a <span class="deepBlue">scientifically-designed SL-Track</span>, the massage
+                            chair rollers
+                            can travel seamlessly from the top of your neck down to the bottom of your hamstrings,
+                            providing a
+                            comprehensive and holistic massage experience. The SL-Track is also capable of spot or
+                            partial massage.
+                        </div>
+                    </div>
+                    <div class="ReEpic_verticalInfoImage">
+                        <img id="img-8" alt="SL-Track Image" />
+                    </div>
+                </div>
+
+                <div class="large-margin-2"></div>
+
+                <div class="ReEpic_verticalInfoBlock">
+                    <div class="ReEpic_verticalInfoText">
+                        <div class="title">
+                            <span class="blue">ZERO GRAVITY</span> RECLINING
+                        </div>
+                        <div>
+                            The Zero-Gravity Reclining increases blood circulation throughout the body by dispersing
+                            gravitational
+                            forces. The Epic’s Zero Gravity Reclining technology is based on NASA’s relaxation theory.
+                        </div>
+                    </div>
+                    <div class="ReEpic_verticalInfoImage">
+                        <img id="img-9" alt="Zero Gravity Image" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_blackBlockWrapper gradientOverlayWrapper">
+                <div class="ReEpic_blackBlock reverse">
+                    <div class="ReEpic_blackImage">
+                        <img id="img-11" alt="Space Saving Feature">
+                    </div>
+                    <div class="ReEpic_blackText" style="z-index: 10;">
+                        <div class="ReEpic_verticalInfoIcon">
+                            <img id="img-10" alt="Space-Saving Icon">
+                        </div>
+                        <div class="ReEpic_blackText title"><span
+                                class="blue">SPACE-SAVING</span><br><strong>DESIGN</strong></div>
+                        <div>
+                            The Epic chair's design only needs <span class="deepBlue">6 inches</span> from the wall for
+                            full recline,
+                            fitting into tight spaces without losing functionality.
+                        </div>
+                    </div>
+                    <div class="ReEpic_gradientOverlay"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ReEpic_iconWrapper" style="margin-top: 0;">
+            <div class="ReEpic_infoRoundedWrapper">
+                <div class="ReEpic_infoBlock">
+                    <div class="ReEpic_infoImage">
+                        <img id="img-12" alt="Aircell Massage Zones">
+                    </div>
+                    <div class="ReEpic_infoText">
+                        <div class="title">
+                            <span class="blue">36 Cell</span><br><strong>Full Body<br>Air Massage</strong>
+                        </div>
+                        <div>
+                            The TP-Epic 4D chair integrates <span class="blue">36 air cells</span> throughout the entire
+                            chair to
+                            expel body strain.
+                            The chair endeavors to provide impeccable compression therapy with every massage.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ReEpic_infoDivider"></div>
+
+                <div class="ReEpic_infoBlock">
+                    <div class="ReEpic_infoText">
+                        <div class="title">
+                            <span class="red"><strong>Dual Heating</strong></span><br>Zones
+                        </div>
+                        <div>
+                            Relax and release stress with the TP-Epic 4D heating system. The heating uses
+                            <span class="red">dual infrared heating coils</span> to effectively warm and soothe tension
+                            along the
+                            lower back.
+                        </div>
+                    </div>
+                    <div class="ReEpic_infoImage">
+                        <img id="img-13" alt="Dual Heating Zones">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_autoMassageModes">
+                <div class="ReEpic_autoMassageTitle">12 AUTO MASSAGE MODES</div>
+
+                <div class="ReEpic_autoMassageGrid">
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-14" alt="Work Relief" />
+                        <div class="label">WORK RELIEF</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-15" alt="Recovery" />
+                        <div class="label">RECOVERY</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-16" alt="Deep Tissue" />
+                        <div class="label">DEEP TISSUE</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-17" alt="Rest & Sleep" />
+                        <div class="label">REST & SLEEP</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-18" alt="Thai" />
+                        <div class="label">THAI</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-19" alt="Gentle" />
+                        <div class="label">GENTLE</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-20" alt="Athletic" />
+                        <div class="label">ATHLETIC</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-21" alt="Vertebral" />
+                        <div class="label">VERTEBRAL</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-22" alt="For Her" />
+                        <div class="label">FOR HER</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-23" alt="For Him" />
+                        <div class="label">FOR HIM</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-24" alt="Neck & Shoulder" />
+                        <div class="label">NECK & SHOULDER</div>
+                    </div>
+                    <div class="ReEpic_autoMassageItem">
+                        <img id="img-25" alt="Waist & Hip" />
+                        <div class="label">WAIST & HIP</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_manualMassageModes">
+                <div class="ReEpic_manualMassageTitle">6 MANUAL MASSAGE MODES</div>
+
+                <div class="ReEpic_manualMassageGrid">
+                    <div class="ReEpic_manualMassageItem">
+                        <img id="img-26" alt="Kneading" />
+                        <div class="label">KNEADING</div>
+                    </div>
+                    <div class="ReEpic_manualMassageItem">
+                        <img id="img-27" alt="Knocking" />
+                        <div class="label">KNOCKING</div>
+                    </div>
+                    <div class="ReEpic_manualMassageItem">
+                        <img id="img-28" alt="Shiatsu" />
+                        <div class="label">SHIATSU</div>
+                    </div>
+                    <div class="ReEpic_manualMassageItem">
+                        <img id="img-29" alt="Tapping" />
+                        <div class="label">TAPPING</div>
+                    </div>
+                    <div class="ReEpic_manualMassageItem">
+                        <img id="img-30" alt="Swedish" />
+                        <div class="label">SWEDISH</div>
+                    </div>
+                    <div class="ReEpic_manualMassageItem">
+                        <img id="img-31" alt="Rolling" />
+                        <div class="label">ROLLING</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ReEpic_overlaySection ReEpic_overlayImageWrapper">
+            <img id="img-32" alt="Foot & Calf Massage" class="ReEpic_overlayImage">
+
+            <div class="ReEpic_overlayTextBlock">
+                <div class="ReEpic_overlayText">
+                    <div class="title">
+                        <span class="blue">Foot & Calf</span><br><strong>Massage</strong>
+                    </div>
+                    <div>
+                        The Epic features a crucial foot and calf massage function. It includes two rollers
+                        dedicated to massaging each foot and one roller for the calf. These rollers ensure an
+                        <span class="blue">exhaustive and satisfying massage</span> experience.
+                    </div>
+                </div>
+
+                <div class="ReEpic_overlayText">
+                    <div class="title">
+                        <span class="blue">Ultra Long</span><br><strong>Extension</strong>
+                    </div>
+                    <div>
+                        The Epic chair is created with all users in consideration. It is designed to suit individuals
+                        with varying body types and heights, featuring an automatic spring-loaded Extendable Footrest
+                        that can extend up to <span class="blue">8.5 inches</span> for maximum comfort.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ReEpic_quickAccessWrapper">
+
+            <div class="ReEpic_quickAccessText">
+                <div class="ReEpic_quickAccessTitle">Quick Access Panel</div>
+                <div class="ReEpic_quickAccessList">
+                    <div class="column">
+                        <div><span class="circle">1</span> ON/OFF</div>
+                        <div><span class="circle">2</span> LIGHT SWITCH</div>
+                        <div><span class="circle">3</span> HEATING</div>
+                        <div><span class="circle">4</span> AUTO MODE</div>
+                    </div>
+                    <div class="column">
+                        <div><span class="circle">5</span> BACKREST UP/DOWN</div>
+                        <div><span class="circle">6</span> LEG EXTEND/RETRACT</div>
+                        <div><span class="circle">7</span> AIR MASSAGE</div>
+                        <div><span class="circle">8</span> ZERO-G</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ReEpic_quickAccessImage">
+                <img id="img-33" alt="Quick Access Panel" class="ReEpic_quickAccessImage" />
+            </div>
+        </div>
+
+        <div class="ReEpic_lastSection">
+            <div class="ReEpic_dualFeatureWrapper">
+                <div class="ReEpic_featurePair">
+                    <img id="img-34" alt="Wireless Charger" />
+                    <div class="textBlock">
+                        <div class="chargerText">
+                            <span class="title"><strong>Wireless Charger.</strong></span>
+                            Place the phone on the wireless charging pad for a convenient, hassle-free experience,
+                            enabling users to
+                            power up their devices.
+                        </div>
+                    </div>
+                </div>
+                <div class="ReEpic_featurePair">
+                    <img id="img-35" alt="USB Charger" />
+                    <div class="textBlock">
+                        <div class="desc">
+                            <span class="title"><strong>USB Charger.</strong></span>
+                            It is located on the side of the chair for easy reach. Relax and enjoy an imperative time
+                            for self care as
+                            your device charges.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_lastBox">
+                <div class="ReEpic_whiteBox">
+                    <div class="ReEpic_infoBlock">
+                        <div class="ReEpic_infoImage">
+                            <img id="img-36" alt="Bluetooth Speakers">
+                        </div>
+                        <div class="ReEpic_infoText">
+                            <div class="title">
+                                <span class="blue">Bluetooth</span><br><strong>Speakers</strong>
+                            </div>
+                            <div>
+                                Enjoy listening to your preferred music, podcasts, or soothing sounds via Epic’s
+                                crystal-clear,
+                                high-fidelity, and surround sound
+                                <span class="blue">Bluetooth speakers</span>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ReEpic_whiteBox">
+                    <div class="ReEpic_infoBlock">
+                        <div class="ReEpic_infoImage">
+                            <img id="img-37" alt="LED Lighting">
+                        </div>
+                        <div class="ReEpic_infoText">
+                            <div class="title">
+                                <span class="blue">LED</span><br><strong>Lighting Detail</strong>
+                            </div>
+                            <div>
+                                Savor your massage with the <span class="blue">perfect lighting</span>. Now you can turn
+                                off all the
+                                lights and truly focus on your massage in the TP-Epic 4D.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ReEpic_dimensionSection">
+                <div class="ReEpic_manualMassageTitle">DIMENSION</div>
+                <div class="ReEpic_dimensionLayout">
+                    <div class="ReEpic_dimensionLeft">
+                        <img id="img-38" alt="Dimension Front" />
+                    </div>
+                    <div class="ReEpic_dimensionRight">
+                        <img id="img-39" alt="Dimension Side" />
+                        <img id="img-40" alt="Dimension Zero-Gravity" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ReEpic_doorwaySection">
+                <div class="ReEpic_manualMassageTitle">MINIMUM DOORWAY</div>
+                <div class="ReEpic_doorwayWrapper">
+                    <div class="ReEpic_doorwayImage">
+                        <img id="img-41" alt="Minimum Doorway" />
+                    </div>
+                    <div class="ReEpic_doorwayText">
+                        <div class="guideTitle"><strong>Measuring Guide</strong></div>
+                        <ul>
+                            <li>Calculate the doorway width by subtracting 1 inch from the smallest inner width of the
+                                door frame.
+                                (1/2 inch from each side)</li>
+                            <li>Please use a standard measuring tape to measure the doorway.</li>
+                            <li>If the door cannot be fully opened, open it as much as possible and measure the width
+                                from the edge of
+                                the door hinge.</li>
+                            <li>If there is a rounded curve on the wall, calculate the inner width based on the most
+                                protruding point
+                                of the wall.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section>
+            <div class="tw-p-10 tw-text-center tw-text-3xl tw-font-bold md:tw-text-4xl lg:tw-text-5xl">
+                Specification
+            </div>
+            <div class="tw-text-xl tw-font-normal">
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row">
+                    <div class="tw-w-52 tw-font-bold">Product Name</div>
+                    <div>TP Epic 4D</div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 lg:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">User Manual</div>
+                    <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+                        <a class="!tw-text-red-500 !tw-no-underline"
+                            href="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/TP-Epic_4D_user_manual_20221007.pdf"
+                            target="_blank">Download</a>
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">Power Supply</div>
+                    <div>110 - 120V</div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">Rate Frequency</div>
+                    <div>50 / 60Hz</div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+                        Chair <br class="tw-hidden lg:tw-block" />
+                        Dimensions <br />
+                        (W x L x H)
+                    </div>
+                    <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-2">
+                        <div>
+                            <div class="tw-text-xl tw-font-bold">Upright</div>
+                            <div>29.5" x 58.0" x 46.5"</div>
+                        </div>
+                        <div>
+                            <div class="tw-text-xl tw-font-bold">Reclined</div>
+                            <div>29.5" x 67.0" x 46.0"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">Chair Weight</div>
+                    <div>202.8 lb</div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">Width</div>
+                    <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+                        <div>
+                            <div class="tw-text-xl tw-font-bold">Shoulder</div>
+                            <div>19.5"</div>
+                        </div>
+                        <div>
+                            <div class="tw-text-xl tw-font-bold">Seat</div>
+                            <div>20.0"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+                        Minimum Door Width
+                    </div>
+                    <div class="tw-grid tw-w-full tw-grid-cols-2 tw-gap-2">
+                        <div>29.5"</div>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+                        User Maximum Weight
+                    </div>
+                    <div>264 lb</div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">
+                        Package <br class="tw-hidden lg:tw-block" />
+                        Dimensions <br />
+                        (W x L x H)
+                    </div>
+                    <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-1">
+                        <div>
+                            <div class="tw-text-xl tw-font-bold">Box 1</div>
+                            <div>32.0" x 50.0" x 48.0"</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2 tw-border-b tw-py-6 md:tw-flex-row">
+                    <div class="tw-w-52 tw-shrink-0 tw-font-bold">Package Weight</div>
+                    <div class="tw-grid tw-w-full tw-gap-2 lg:tw-grid-cols-1">
+                        <div>
+                            <div class="tw-text-xl tw-font-bold">Box 1</div>
+                            <div>242.8 lb</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
+        const mainVisual = document.querySelector('.ReEpic_mainVisual');
+        const slides = document.querySelectorAll('.ReEpic_slide');
+        const arrows = document.querySelectorAll('.ReEpic_arrow');
+        const sliderTrack = document.querySelector('.ReEpic_sliderTrack');
+        const productNameEl = document.querySelector('.ReEpic_productName');
+        let currentSlide = 0;
+
+        // Slide function
+        function showSlide(index) {
+            const isWrappingForward = currentSlide === slides.length - 1 && index === 0;
+            const isWrappingBackward = currentSlide === 0 && index === slides.length - 1;
+
+            if (isWrappingForward) {
+                // Taupe(3) → Everything(0)
+                sliderTrack.style.transition = 'none';
+                sliderTrack.style.transform = `translateX(${100}%)`;
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        sliderTrack.style.transition = 'transform 0.5s ease';
+                        sliderTrack.style.transform = `translateX(${0}%)`;
+                    });
+                });
+            } else if (isWrappingBackward) {
+                // Everything(0) → Taupe(3)
+                sliderTrack.style.transition = 'none';
+                sliderTrack.style.transform = `translateX(${-400}%)`; // 4개 슬라이드 기준
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        sliderTrack.style.transition = 'transform 0.5s ease';
+                        sliderTrack.style.transform = `translateX(${-index * 100}%)`;
+                    });
+                });
+            } else {
+
+                const offset = -index * 100;
+                sliderTrack.style.transition = 'transform 0.5s ease';
+                sliderTrack.style.transform = `translateX(${offset}%)`;
+            }
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+
+            colorButtons.forEach(btn => btn.classList.remove('active'));
+            colorButtons[index].classList.add('active');
+
+            const newImgPath = colorButtons[index].getAttribute('data-img');
+            if (newImgPath) {
+                mainVisual.style.backgroundImage = `url('${newImgPath}')`;
+            }
+
+            const names = [
+                'Titan TP-Epic 4D',
+                'Titan TP-Epic 4D Black',
+                'Titan TP-Epic 4D Brown',
+                'Titan TP-Epic 4D Taupe'
+            ];
+            productNameEl.textContent = names[index];
+
+            currentSlide = index;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            showSlide(0);
+        });
+
+        arrows.forEach(arrow => {
+            arrow.addEventListener('click', () => {
+                const isLeft = arrow.classList.contains('left');
+                const newIndex = isLeft
+                    ? (currentSlide === 0 ? slides.length - 1 : currentSlide - 1)
+                    : (currentSlide === slides.length - 1 ? 0 : currentSlide + 1);
+                showSlide(newIndex);
+            });
+        });
+        colorButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
