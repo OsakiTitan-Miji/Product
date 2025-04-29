@@ -3,11 +3,8 @@
 .ReEpic_wrapper {
   width: 100%;
   max-width: 1000px;
-  /* 페이지 전체 폭 제한 */
   margin: 0 auto;
-  /* 가운데 정렬 */
   padding: 0 20px;
-  /* 좌우 여백 */
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
 }
@@ -15,23 +12,20 @@
 .ReEpic_mainVisual {
   width: 100%;
   height: auto;
-  /* 높이 고정 대신 콘텐츠 크기에 맞게 조정 */
   margin-bottom: 20px;
 }
 
 .ReEpic_mainVisual img {
   width: 100%;
-  /* 이미지가 부모 div 너비에 맞게 조정 */
   height: auto;
   object-fit: contain;
-  /* 이미지 비율 유지하면서 꽉 채움 */
   display: block;
   margin: 0 auto;
 }
 
 .ReEpic_introText {
 
-  padding: 40px 100px;
+  padding: 40px 80px;
   text-align: center;
   font-size: 24px;
   line-height: 1.6;
