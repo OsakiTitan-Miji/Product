@@ -393,6 +393,7 @@
 }
 
 .ReEpic_infoRoundedWrapper {
+  max-width: 90%;
   background-color: #fff;
   border-radius: 40px;
   padding: 80px 50px;
@@ -1065,7 +1066,30 @@
 
 }
 
-@media (max-width: 630px) {
+@media (max-width: 700px) {
+  .ReEpic_overlayTextBlock {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .ReEpic_overlayText {
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+  }
+
+  .ReEpic_overlayText .title {
+    font-size: 24px;
+  }
+
+  .ReEpic_overlayImage {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 590px) {
   .ReEpic_overlayTextBlock {
     padding: 40px 20px;
     gap: 40px;
@@ -1075,11 +1099,11 @@
     padding: 20px;
     width: 100%;
     max-width: 200px;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .ReEpic_overlayText .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .ReEpic_overlayImage {
