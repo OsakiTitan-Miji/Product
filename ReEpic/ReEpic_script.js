@@ -6,34 +6,6 @@ const sliderTrack = document.querySelector(".ReEpic_sliderTrack");
 const productNameEl = document.querySelector(".ReEpic_productName");
 let currentSlide = 0;
 
-const youtubeId = "MDq5dq3sGnY";
-
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("youtube-player", {
-    videoId: youtubeId,
-    playerVars: {
-      autoplay: 1,
-      mute: 1,
-      controls: 1,
-      modestbranding: 1,
-      rel: 0,
-      showinfo: 0,
-      playsinline: 1,
-    },
-    events: {
-      onReady: (event) => {
-        event.target.playVideo();
-      },
-    },
-  });
-}
-
 function showSlide(index) {
   const isWrappingForward = currentSlide === slides.length - 1 && index === 0;
   const isWrappingBackward = currentSlide === 0 && index === slides.length - 1;
