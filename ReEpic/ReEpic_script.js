@@ -6,13 +6,40 @@ const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
         const productNameEl = document.querySelector('.ReEpic_productName');
         let currentSlide = 0;
 
-        // 슬라이드 보여주는 함수
+        const youtubeId = "MDq5dq3sGnY";
+
+        var tag = document.createElement("script");
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player("youtube-player", {
+            videoId: youtubeId,
+            playerVars: {
+              autoplay: 1,
+              mute: 1,
+              controls: 0,
+              modestbranding: 1,
+              rel: 0,
+              showinfo: 0,
+              playsinline: 1,
+            },
+            events: {
+              onReady: (event) => {
+                event.target.playVideo();
+              },
+            },
+          });
+        }
+
         function showSlide(index) {
             const isWrappingForward = currentSlide === slides.length - 1 && index === 0;
             const isWrappingBackward = currentSlide === 0 && index === slides.length - 1;
 
             if (isWrappingForward) {
-                // Taupe(3) → Everything(0) : 오른쪽에서 왼쪽으로 등장
+                // Taupe(3) → Everything(0)
                 sliderTrack.style.transition = 'none';
                 sliderTrack.style.transform = `translateX(${100}%)`;
                 requestAnimationFrame(() => {
@@ -22,9 +49,9 @@ const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
                     });
                 });
             } else if (isWrappingBackward) {
-                // Everything(0) → Taupe(3) : 왼쪽에서 오른쪽으로 등장
+                // Everything(0) → Taupe(3)
                 sliderTrack.style.transition = 'none';
-                sliderTrack.style.transform = `translateX(${-400}%)`; // 4개 슬라이드 기준
+                sliderTrack.style.transform = `translateX(${-400}%)`;
                 requestAnimationFrame(() => {
                     requestAnimationFrame(() => {
                         sliderTrack.style.transition = 'transform 0.5s ease';
@@ -32,20 +59,17 @@ const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
                     });
                 });
             } else {
-                // 일반 이동
                 const offset = -index * 100;
                 sliderTrack.style.transition = 'transform 0.5s ease';
                 sliderTrack.style.transform = `translateX(${offset}%)`;
             }
 
-            // 활성화 슬라이드 표시
             slides.forEach(slide => slide.classList.remove('active'));
             slides[index].classList.add('active');
 
             colorButtons.forEach(btn => btn.classList.remove('active'));
             colorButtons[index].classList.add('active');
 
-            // 배경 이미지와 제품명 변경
             const newImgPath = colorButtons[index].getAttribute('data-img');
             if (newImgPath) {
                 mainVisual.style.backgroundImage = `url('${newImgPath}')`;
@@ -62,12 +86,10 @@ const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
             currentSlide = index;
         }
 
-        // 초기 설정
         window.addEventListener('DOMContentLoaded', () => {
             showSlide(0);
         });
 
-        // 화살표 클릭 이벤트
         arrows.forEach(arrow => {
             arrow.addEventListener('click', () => {
                 const isLeft = arrow.classList.contains('left');
@@ -78,7 +100,6 @@ const colorButtons = document.querySelectorAll('.ReEpic_colorButton');
             });
         });
 
-        // 버튼 클릭 이벤트
         colorButtons.forEach((button, index) => {
             button.addEventListener('click', () => {
                 showSlide(index);
