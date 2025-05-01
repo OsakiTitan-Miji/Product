@@ -921,6 +921,8 @@
   .ReEpic_blackBlock.reverse {
     flex-direction: column;
     text-align: center;
+    padding: 20px;
+    gap: 20px;
   }
 
   .ReEpic_verticalInfoWrapper {
