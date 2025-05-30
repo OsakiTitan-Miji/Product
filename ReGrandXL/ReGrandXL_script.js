@@ -52,10 +52,10 @@ function showSlide(index) {
   }
 
   const names = [
-    "Titan Grand XL 3D",
-    "Titan Grand XL 3D Black",
-    "Titan Grand XL 3D Brown",
-    "Titan Grand XL 3D Taupe",
+    "Titan Grande XL 3D",
+    "Titan Grande XL 3D Black",
+    "Titan Grande XL 3D Brown",
+    "Titan Grande XL 3D Taupe",
   ];
   productNameEl.textContent = names[index];
 
