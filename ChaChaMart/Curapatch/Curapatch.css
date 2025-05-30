@@ -10,11 +10,15 @@
     width: 100%;
 }
 
-img {
+#externalURL img,
+.curapatch_featureBox img,
+.curapatch_iconItem img,
+.curapatch_ingredientImg {
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
   border-radius: 0 !important;
+  background: none !important;
 }
 
 /* 공통 구조 */
