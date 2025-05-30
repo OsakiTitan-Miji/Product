@@ -1,18 +1,20 @@
 .large-margin-5 {
-  margin: 5rem;
+  margin: 5rem !important;
 }
 
 .large-margin-10 {
-  margin: 10rem;
+  margin: 10rem !important;
 }
 
 .curapatch_mainImg {
     width: 100%;
 }
 
-/* 기본 이미지 */
-.img {
-    width: 460px;
+img {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 /* 공통 구조 */
