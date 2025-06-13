@@ -737,3 +737,131 @@
     max-width: 460px;
     line-height: 1.8;
 }
+
+/* ============================
+   Responsive Styles (768px ↓)
+   ============================ */
+
+@media (max-width: 768px) {
+  .ReIntegra_introText {
+    padding: 20px 40px;
+    font-size: 18px;
+  }
+
+  .ReIntegra_Text--Mont--Title,
+  .ReIntegra_Text--Robo--Title {
+    font-size: 26px;
+  }
+
+  .ReIntegra_Text--Mont--Desc,
+  .ReIntegra_Text--Robo--Desc {
+    font-size: 16px;
+  }
+
+  .ReIntegra_divWrapper,
+  .ReIntegra_recBoxWrapper,
+  .ReIntegra_Card--RecRow {
+    gap: 24px;
+  }
+
+  .ReIntegra_Card--Horizontal--row,
+  .ReIntegra_Card--Horizontal--rowFit {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .ReIntegra_Card--Horizontal--row img,
+  .ReIntegra_Card--Horizontal--rowFit img {
+    max-width: 100%;
+  }
+
+  .ReIntegra_Card--Horizontal--column_img {
+    max-width: 100%;
+  }
+
+  .ReIntegra_autoGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+  }
+
+  .ReIntegra_lastRow {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .ReIntegra_programIcon {
+    width: 90px;
+    min-height: 150px;
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .ReIntegra_programIcon img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+/* ============================
+   Responsive Styles (430px ↓)
+   ============================ */
+
+@media (max-width: 430px) {
+  .ReIntegra_introText {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .ReIntegra_Text--Mont--Title,
+  .ReIntegra_Text--Robo--Title {
+    font-size: 22px;
+  }
+
+  .ReIntegra_Text--Mont--Desc,
+  .ReIntegra_Text--Robo--Desc {
+    font-size: 14px;
+  }
+
+  .ReIntegra_autoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+  }
+
+  .ReIntegra_lastRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .ReIntegra_programIcon {
+    width: 80px;
+    min-height: 140px;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .ReIntegra_programIcon img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ReIntegra_Card--Horizontal--row,
+  .ReIntegra_Card--Horizontal--rowFit {
+    padding: 20px;
+  }
+
+  .ReIntegra_manualRow {
+    gap: 40px;
+  }
+
+  .ReIntegra_LineCard img {
+    height: 320px;
+  }
+
+  .ReIntegra_LineCard--line {
+    width: 240px;
+  }
+}
