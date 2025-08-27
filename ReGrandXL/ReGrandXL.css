@@ -151,7 +151,7 @@
 }
 
 .ReGXL_sizeWrapper {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     box-sizing: border-box;
     background-color: #fff;
@@ -334,7 +334,7 @@
 }
 
 .ReGXL_blackFeature {
-    max-width: 400px;
+    max-width: 600px;
     text-align: center;
     color: #bcbcbc;
     display: flex;
@@ -418,6 +418,7 @@
     background-color: #fff;
     overflow: hidden;
     padding: 40px 0;
+    border-radius: 40px;
 }
 
 .ReGXL_ZGWrapper img {
@@ -442,7 +443,7 @@
     overflow: hidden;
     flex: 1;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,12 +618,13 @@
 }
 
 .ReGXL_3features {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     background-color: #fff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 60px;
 }
 
@@ -733,19 +735,19 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
 }
 
 .ReGXL_minDimBox img {
-    max-width: 200px;
+    max-width: 240px;
     width: 100%;
     height: auto;
 }
 
 .ReGXL_minDimBox2 img {
     width: auto;
-    height: 300px;
+    height: 400px;
 }
 
 .ReGXL_minDimText {
