@@ -769,7 +769,7 @@
     align-items: center;
 }
 
-.Vista_Card--Rectangle img{
+.Vista_Card--Rectangle img {
     width: 400px;
     height: auto;
 }
@@ -1130,6 +1130,87 @@
    ============================ */
 
 @media (max-width: 990px) {
+    .Vista_SquareContent {
+        flex-direction: column;
+    }
+
+    .Vista_SquareContent .textBox {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Vista_video {
+        max-width: 100%;
+    }
+
+    .Vista_SquareContent .PL {
+        padding-left: 0;
+    }
+
+    .Vista_SquareContent .PR {
+        padding-right: 0;
+    }
+
+    .Vista_row2Card {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 1rem;
+    }
+
+    .Vista_row2Card .card {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .Vista_row2Card img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .Vista_row2Card .textBox {
+        max-width: 90%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .Vista_modeWrapper {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .Vista_modeBlock {
+        width: 100%;
+        align-items: center;
+    }
+
+    .Vista_category {
+        width: 100%;
+        align-items: center;
+    }
+
+    .Vista_programs {
+        gap: 16px;
+    }
+
+    .Vista_programItem img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Vista_programItem {
+        font-size: 13px;
+    }
+
+    .Vista_manualItem--line2 {
+        display: block;
+        max-width: 1000px;
+        width: 100%;
+        height: 3px;
+        background-color: rgba(108, 164, 255, 0.5);
+        margin: 40px 0;
+    }
+
     .Vista_Card--Horizontal--rowFit {
         display: flex;
         flex-direction: row;
@@ -1248,19 +1329,6 @@
         align-items: center;
     }
 
-    .Vista_SquareContent {
-        flex-direction: column;
-    }
-
-    .Vista_SquareContent .textBox {
-        width: 100%;
-        text-align: center;
-    }
-
-    .Vista_video {
-        max-width: 100%;
-    }
-
     .Vista_introText {
         padding: 20px 40px;
         font-size: 18px;
@@ -1332,9 +1400,6 @@
         padding: 20px 40px;
     }
 
-    .Vista_manualItem--line1 {
-        width: 100px;
-    }
 
     .Vista_manualRow {
         flex-direction: column;
@@ -1355,41 +1420,6 @@
     .Vista_Card--Horizontal--rowFit .textBox2 {
         margin-left: 5rem;
     }
-
-    .Vista_modeBlock {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 24px;
-    }
-
-    .Vista_category {
-        width: 100%;
-        align-items: center;
-    }
-
-    .Vista_programs {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px 24px;
-    }
-
-    .Vista_programItem img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .Vista_programItem {
-        font-size: 13px;
-    }
-
-    .Vista_manualItem--line2 {
-        display: block;
-        max-width: 1000px;
-        width: 100%;
-        height: 3px;
-        background-color: rgba(108, 164, 255, 0.5);
-        margin: 40px 0;
-    }
 }
 
 
@@ -1398,6 +1428,23 @@
    ============================ */
 
 @media (max-width: 430px) {
+    .Vista_row2Card {
+        gap: 24px;
+        padding: 0;
+    }
+
+    .Vista_row2Card img {
+        max-width: 100%;
+    }
+
+    .Vista_row2Card .Vista_Text--Mont--SubTitle {
+        font-size: 20px;
+    }
+
+    .Vista_row2Card .Vista_Text--Robo--Desc {
+        font-size: 14px;
+    }
+
     .rowReverse {
         flex-direction: column;
     }
