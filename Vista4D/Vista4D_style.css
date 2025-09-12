@@ -458,6 +458,45 @@
 }
 
 /* feature cards */
+.Vista_zgIconWrapper {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.Vista_zgIconDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.Vista_zgIcon {
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+}
+
+.Vista_zgTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #a4a6a9;
+}
+
+.Vista_zgLine {
+    background-color: #a4a6a9;
+    width: 2px;
+    margin-top: 1rem;
+    max-height: 70px;
+    height: auto;
+}
 
 .Vista_Cell {
     display: flex;
