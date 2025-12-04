@@ -613,7 +613,7 @@
 }
 
 .Kairos_zgIcon {
-    max-width: 90px;
+    max-width: 90px !important;
     width: 100%;
     height: auto;
 }
