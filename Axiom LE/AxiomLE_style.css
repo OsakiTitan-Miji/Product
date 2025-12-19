@@ -415,6 +415,17 @@
     color: #6ca4ff;
 }
 
+.Axiom_Text_Heating {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #bcbcbc;
+    margin-top: 16px;
+}
+
 /* Div wrapper */
 
 .Axiom_divWrapper {
