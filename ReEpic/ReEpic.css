@@ -168,6 +168,16 @@
   border-color: #000;
 }
 
+.ReEpic_Text_Heating {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #424242;
+}
+
 .ReEpic_featureCardsWrapper {
   display: flex;
   gap: 24px;
