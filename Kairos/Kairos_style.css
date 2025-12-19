@@ -214,6 +214,16 @@
 
 /* Text (Title, Desc) */
 
+.Kairos_Text_Heating {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #424242;
+}
+
 .Kairos_Text--Mont--Title {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
