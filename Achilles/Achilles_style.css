@@ -946,6 +946,10 @@
    ============================ */
 
 @media (max-width: 960px) {
+    .Achilles_manualItem--line {
+        display: none;
+    }
+    
     .Achilles_introText {
         padding: 20px 40px;
         font-size: 18px;
