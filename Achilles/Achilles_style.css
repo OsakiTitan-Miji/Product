@@ -949,7 +949,11 @@
     .Achilles_manualItem--line {
         display: none;
     }
-    
+
+    .Achilles_Text--Mont--Title {
+        text-align: center;
+    }
+
     .Achilles_introText {
         padding: 20px 40px;
         font-size: 18px;
