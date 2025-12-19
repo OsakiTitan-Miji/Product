@@ -151,6 +151,16 @@
 }
 
 /* Sections by background color */
+.ReIntegra_Text_Heating {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #424242;
+    margin-top: 16px;
+}
 
 .ReIntegra_Box--Black {
     background-color: #161616;
