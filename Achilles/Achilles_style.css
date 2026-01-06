@@ -1122,3 +1122,13 @@
         padding: 10px 20px;
     }
 }
+
+/* Fix: center multi-line subtitle inside each modes column */
+.Achilles_modesIcon .Achilles_Text--Mont--SubTitle {
+  width: 100%;
+  text-align: center;
+}
+
+.Achilles_modesIcon .Achilles_Text--Mont--SubTitle > span {
+  display: block;
+}
