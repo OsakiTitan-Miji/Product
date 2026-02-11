@@ -229,6 +229,21 @@
     color: #424242;
 }
 
+.Somnus_Text--Mont--Title .AILogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .Somnus_Text--Mont--Title .AILogo {
+        flex-direction: column;
+        gap: 12px; /* 모바일에서 간격 줄이기 */
+        text-align: center;
+    }
+}
+
 .Somnus_Text--Mont--Title .left {
     text-align: left;
 }
@@ -484,8 +499,7 @@
 .Somnus_logoSectionLogo {
     height: 40px;
     width: auto;
-    vertical-align: middle;
-    /* 텍스트와 baseline 맞추기 */
+    display: block;
 }
 
 .Somnus_logoSectionImage {
@@ -494,7 +508,7 @@
     height: auto;
 }
 
-.Somnus_Box--Black .Somnus_Image1 {
+.Somnus_Box_Black .Somnus_Image1 {
     width: 100%;
     max-width: 700px;
     height: auto;
