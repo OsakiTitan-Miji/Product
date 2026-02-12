@@ -1,43 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titan Epic Product Page</title>
 
     <link href="https://ota-shawn.github.io/Products/globalProductDescription.css" rel="stylesheet" />
 
+    <!-- 글로벌 CSS -->
     <link href="" rel="stylesheet" />
     <link href="../CustomStyle.css" rel="stylesheet" />
 
+    <!-- 폰트 불러오기 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- 상품 상세 전용 CSS -->
     <link href="ReEpic.css" rel="stylesheet" />
 
     <script>
         const youtube_link = "https://youtu.be/MDq5dq3sGnY";
     </script>
 
+</head>
 
 <body>
 
-    <div class="ReEpic_wrapper">
+    <div class="whole_wrapper">
 
         <div class="video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/MDq5dq3sGnY?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1"
-              title="YouTube video"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              style="position:absolute; top:0; left:0; width:100%; height:100%;"
-            ></iframe>
-          </div>
-
-        <div class="ReEpic_mainVisual">
-            <div><img id="img-1" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Epic_lifestyle_main.png?v=1745957459" alt="Epic_main"></div>
+                src="https://www.youtube.com/embed/MDq5dq3sGnY?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0&playsinline=1"
+                title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
         </div>
 
+        <!-- 메인 이미지 영역 -->
+        <div class="ReEpic_mainVisual">
+            <div><img id="img-1"
+                    src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/1.Epic_lifestyle_main.png?v=1745957459"
+                    alt="Epic_main"></div>
+        </div>
+
+        <!-- 메인 설명 텍스트 영역 -->
         <div class="ReEpic_introText">
             <div><strong>The TP-Epic 4D massage chair</strong> contains several luxurious features, such as intuitive
                 voice
@@ -48,94 +55,110 @@
                 you every time you sit in it.</div>
         </div>
 
+        <!-- 상호작용 영역 -->
         <div class="ReEpic_interactionSection">
             <div class="ReEpic_sliderContainer">
+                <!-- 좌우 화살표 -->
                 <div class="ReEpic_arrow left">‹</div>
                 <div class="ReEpic_sliderTrack">
-                    <div class="ReEpic_slide"><img id="img-46" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Epic_interaction_chair_everything.png?v=1745957458" alt="Everything"></div>
-                    <div class="ReEpic_slide"><img id="img-47" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.Epic_interaction_chair_black.png?v=1745957458" alt="Black"></div>
-                    <div class="ReEpic_slide"><img id="img-48" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Epic_interaction_chair_brown.png?v=1745957458" alt="Brown"></div>
-                    <div class="ReEpic_slide"><img id="img-49" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.Epic_interaction_chair_taupe.png?v=1745957458" alt="Taupe"></div>
+                    <div class="ReEpic_slide"><img id="img-46"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/53.Epic_interaction_chair_everything.png?v=1745957458"
+                            alt="Everything"></div>
+                    <div class="ReEpic_slide"><img id="img-47"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/54.Epic_interaction_chair_black.png?v=1745957458"
+                            alt="Black"></div>
+                    <div class="ReEpic_slide"><img id="img-48"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/55.Epic_interaction_chair_brown.png?v=1745957458"
+                            alt="Brown"></div>
+                    <div class="ReEpic_slide"><img id="img-49"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/56.Epic_interaction_chair_taupe.png?v=1745957458"
+                            alt="Taupe"></div>
                 </div>
                 <div class="ReEpic_arrow right">›</div>
 
+                <!-- 그라데이션 -->
                 <div class="ReEpic_gradient left"></div>
                 <div class="ReEpic_gradient right"></div>
             </div>
 
             <div class="ReEpic_productName">Titan TP-Epic 4D</div>
 
+            <!-- 색상 선택 버튼 -->
             <div class="ReEpic_buttonWrapper">
                 <div class="ReEpic_colorSelector">
-                    <div id="color-btn-everything"
-                        class="ReEpic_colorButton active" data-index="0"
+                    <div id="color-btn-everything" class="ReEpic_colorButton active" data-index="0"
                         style="background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/45.Epic_interaction_bar_color_everything.png?v=1745958124');">
                     </div>
-                    <div id="color-btn-black"
-                        class="ReEpic_colorButton" data-index="1"
+                    <div id="color-btn-black" class="ReEpic_colorButton" data-index="1"
                         style="background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/46.Epic_interaction_bar_color_black.png?v=1745958124');">
                     </div>
-                    <div id="color-btn-brown"
-                        class="ReEpic_colorButton" data-index="2"
+                    <div id="color-btn-brown" class="ReEpic_colorButton" data-index="2"
                         style="background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/47.Epic_interaction_bar_color_brown.png?v=1745958124');">
                     </div>
-                    <div id="color-btn-taupe"
-                        class="ReEpic_colorButton" data-index="3"
+                    <div id="color-btn-taupe" class="ReEpic_colorButton" data-index="3"
                         style="background-image: url('https://cdn.shopify.com/s/files/1/0086/1297/0558/files/52.Epic_interection_bar_color_taupe_selected.png?v=1745957457');">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="ReEpic_featureCardsWrapper">
-            <div class="ReEpic_featureCards left">
+        <!-- 세 가지 설명 카드 수정 -->
+        <div class="ReEpic_TripleCardsWrapper">
+            <div class="ReEpic_TripleCards left">
                 <!-- Voice command -->
-                <div class="ReEpic_featureCard">
-                    <img id="img-2" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Epic_voice_command.png" class="ReEpic_featureCardImage" alt="Voice Command" />
-                    <div class="ReEpic_featureCardText">
+                <div class="ReEpic_TripleCard">
+                    <img src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/2.Epic_voice_command.png"
+                        class="ReEpic_TripleCardsImage" alt="Voice Command" />
+                    <div class="ReEpic_TripleCardsText">
                         <div>
                             Epic’s convenient <strong>voice command</strong> feature allows for easy control of the
                             chair without use
-                            of buttons or a touch screen. Simply give a command and the chair will respond accordingly,
-                            eliminating the need for manual adjustments. All commands can be found inside the manual.
+                            of
+                            buttons or a touch screen. Simply give a command and the chair will respond accordingly,
+                            eliminating the
+                            need for manual adjustments. All commands can be found inside the manual.
                         </div>
-                        <div class="large-margin-3"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="ReEpic_featureCards right">
-                <div class="ReEpic_featureCard">
-                    <img id="img-3" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Epic_touchscreen.png" class="ReEpic_featureCardImage" alt="Touchscreen" />
-                    <div class="ReEpic_featureCardText">
+            <div class="ReEpic_TripleCards right">
+                <!-- Touchscreen -->
+                <div class="ReEpic_TripleCard">
+                    <div class="ReEpic_TripleCardsText">
                         <div>
                             The TP-Epic 4D chair's remote control is now equipped with a <strong>touchscreen</strong>
                             interface for
                             effortless navigation and adjustment of settings.
                         </div>
-                        <div style="margin-bottom: 22rem;"></div>
                     </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Epic_touchscreen.png"
+                        class="ReEpic_TripleCardsImage" alt="Touchscreen" />
                 </div>
 
-                <div class="ReEpic_featureCard">
-                    <img id="img-4" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/4.Epic_lumbar_aircell.png" class="ReEpic_featureCardImage" alt="Lumbar air-cell" />
-                    <div class="ReEpic_featureCardText">
+                <!-- lumbar function -->
+                <div class="ReEpic_TripleCard">
+                    <div class="ReEpic_TripleCardsText">
                         <div>
                             One of the most overlooked portions of modern massages is in the lumbar. The Epic pays close
                             attention to
                             your back with its proven <strong>lumbar function</strong>.
                         </div>
-                        <div style="margin-bottom: 24rem;"></div>
                     </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/3.Epic_touchscreen.png"
+                        class="ReEpic_TripleCardsImage" alt="Lumbar air-cell" />
                 </div>
             </div>
         </div>
 
+        <!-- 검정색 배경 구역 1 -->
         <div class="ReEpic_blackWrapper">
+            <!-- 4D Massage -->
             <div class="ReEpic_blackBlockWrapper gradientOverlayWrapper">
                 <div class="ReEpic_blackBlock reverse">
                     <div class="ReEpic_blackImage">
-                        <img id="img-5" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Epic_3D.png" alt="4D Massage System">
+                        <img id="img-5" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/5.Epic_3D.png"
+                            alt="4D Massage System">
                     </div>
                     <div class="ReEpic_blackText" style="z-index: 10;">
                         <div class="ReEpic_blackText title">
@@ -154,9 +177,11 @@
                 </div>
             </div>
 
+            <!-- Body Scan -->
             <div class="ReEpic_blackBlock">
                 <div class="ReEpic_blackImage">
-                    <img id="img-6" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Epic_body_scan.png" alt="Body Scan System">
+                    <img id="img-6" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/6.Epic_body_scan.png"
+                        alt="Body Scan System">
                 </div>
                 <div class="ReEpic_blackText">
                     <div class="ReEpic_blackText title"><strong>SMART</strong><br><span class="blue">BODY
@@ -169,9 +194,11 @@
             </div>
 
             <div class="ReEpic_verticalInfoWrapper">
+                <!-- SL-Track -->
                 <div class="ReEpic_verticalInfoBlock">
                     <div class="ReEpic_verticalInfoIcon">
-                        <img id="img-7" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Epic_icon_SL.png" alt="SL Icon" />
+                        <img id="img-7" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/7.Epic_icon_SL.png"
+                            alt="SL Icon" />
                     </div>
                     <div class="ReEpic_verticalInfoText">
                         <div class="title">
@@ -187,12 +214,15 @@
                         </div>
                     </div>
                     <div class="ReEpic_verticalInfoImage">
-                        <img id="img-8" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Epic_SL.png?v=1745957458" alt="SL-Track Image" />
+                        <img id="img-8"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/8.Epic_SL.png?v=1745957458"
+                            alt="SL-Track Image" />
                     </div>
                 </div>
 
                 <div class="large-margin-2"></div>
 
+                <!-- Zero Gravity -->
                 <div class="ReEpic_verticalInfoBlock">
                     <div class="ReEpic_verticalInfoText">
                         <div class="title">
@@ -205,19 +235,26 @@
                         </div>
                     </div>
                     <div class="ReEpic_verticalInfoImage">
-                        <img id="img-9" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Epic_ZG.png?v=1745957458" alt="Zero Gravity Image" />
+                        <img id="img-9"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/9.Epic_ZG.png?v=1745957458"
+                            alt="Zero Gravity Image" />
                     </div>
                 </div>
             </div>
 
+            <!-- Space-Saving -->
             <div class="ReEpic_blackBlockWrapper gradientOverlayWrapper">
                 <div class="ReEpic_blackBlock reverse">
                     <div class="ReEpic_blackImage">
-                        <img id="img-11" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Epic_space_saving.png?v=1745957458" alt="Space Saving Feature">
+                        <img id="img-11"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/11.Epic_space_saving.png?v=1745957458"
+                            alt="Space Saving Feature">
                     </div>
                     <div class="ReEpic_blackText" style="z-index: 10;">
                         <div class="ReEpic_verticalInfoIcon">
-                            <img id="img-10" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Epic_icon_space_saving.png" alt="Space-Saving Icon">
+                            <img id="img-10"
+                                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/10.Epic_icon_space_saving.png"
+                                alt="Space-Saving Icon">
                         </div>
                         <div class="ReEpic_blackText title"><span
                                 class="blue">SPACE-SAVING</span><br><strong>DESIGN</strong></div>
@@ -227,6 +264,7 @@
                             fitting into tight spaces without losing functionality.
                         </div>
                     </div>
+                    <!-- 여기에 gradient 들어감 -->
                     <div class="ReEpic_gradientOverlay"></div>
                 </div>
             </div>
@@ -234,9 +272,12 @@
 
         <div class="ReEpic_iconWrapper" style="margin-top: 0;">
             <div class="ReEpic_infoRoundedWrapper">
+                <!-- Aircell -->
                 <div class="ReEpic_infoBlock">
                     <div class="ReEpic_infoImage">
-                        <img id="img-12" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Epic_aircell.png?v=1745957458" alt="Aircell Massage Zones">
+                        <img id="img-12"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/12.Epic_aircell.png?v=1745957458"
+                            alt="Aircell Massage Zones">
                     </div>
                     <div class="ReEpic_infoText">
                         <div class="title">
@@ -253,6 +294,7 @@
 
                 <div class="ReEpic_infoDivider"></div>
 
+                <!-- Heating Zones -->
                 <div class="ReEpic_infoBlock">
                     <div class="ReEpic_infoText">
                         <div class="title">
@@ -261,97 +303,137 @@
                         <div>
                             Relax and release stress with the TP-Epic 4D heating system. The heating uses
                             <span class="red">dual infrared heating coils</span> to effectively warm and soothe tension
-                            along the lower back.*
+                            along the
+                            lower back.
                         </div>
-                        <span class="ReEpic_Text_Heating">*The heating therapy provide warmth in the range of approximately 75 - 83°F.</span>
                     </div>
                     <div class="ReEpic_infoImage">
-                        <img id="img-13" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Epic_heating.png?v=1745957458" alt="Dual Heating Zones">
+                        <img id="img-13"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/13.Epic_heating.png?v=1745957458"
+                            alt="Dual Heating Zones">
                     </div>
                 </div>
             </div>
 
+            <!-- 12 Auto Massage Modes -->
             <div class="ReEpic_autoMassageModes">
                 <div class="ReEpic_autoMassageTitle">12 AUTO MASSAGE MODES</div>
 
                 <div class="ReEpic_autoMassageGrid">
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-14" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Epic_icon_auto_massage_work_relief.png" alt="Work Relief" />
+                        <img id="img-14"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/14.Epic_icon_auto_massage_work_relief.png"
+                            alt="Work Relief" />
                         <div class="label">WORK RELIEF</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-15" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Epic_icon_auto_massage_recovery.png" alt="Recovery" />
+                        <img id="img-15"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/15.Epic_icon_auto_massage_recovery.png"
+                            alt="Recovery" />
                         <div class="label">RECOVERY</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-16" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Epic_icon_auto_massage_deep_tissue.png" alt="Deep Tissue" />
+                        <img id="img-16"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/16.Epic_icon_auto_massage_deep_tissue.png"
+                            alt="Deep Tissue" />
                         <div class="label">DEEP TISSUE</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-17" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Epic_icon_auto_massage_rest_sleep.png" alt="Rest & Sleep" />
+                        <img id="img-17"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/17.Epic_icon_auto_massage_rest_sleep.png"
+                            alt="Rest & Sleep" />
                         <div class="label">REST & SLEEP</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-18" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Epic_icon_auto_massage_thai.png" alt="Thai" />
+                        <img id="img-18"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/18.Epic_icon_auto_massage_thai.png"
+                            alt="Thai" />
                         <div class="label">THAI</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-19" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Epic_icon_auto_massage_gentle.png" alt="Gentle" />
+                        <img id="img-19"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/19.Epic_icon_auto_massage_gentle.png"
+                            alt="Gentle" />
                         <div class="label">GENTLE</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-20" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Epic_icon_auto_massage_athletic.png" alt="Athletic" />
+                        <img id="img-20"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/20.Epic_icon_auto_massage_athletic.png"
+                            alt="Athletic" />
                         <div class="label">ATHLETIC</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-21" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Epic_icon_auto_massage_vertebral.png" alt="Vertebral" />
+                        <img id="img-21"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/21.Epic_icon_auto_massage_vertebral.png"
+                            alt="Vertebral" />
                         <div class="label">VERTEBRAL</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-22" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Epic_icon_auto_massage_for_her.png" alt="For Her" />
+                        <img id="img-22"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/22.Epic_icon_auto_massage_for_her.png"
+                            alt="For Her" />
                         <div class="label">FOR HER</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-23" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Epic_icon_auto_massage_for_him.png" alt="For Him" />
+                        <img id="img-23"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/23.Epic_icon_auto_massage_for_him.png"
+                            alt="For Him" />
                         <div class="label">FOR HIM</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-24" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Epic_icon_auto_massage_neck_shoulder.png" alt="Neck & Shoulder" />
+                        <img id="img-24"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/24.Epic_icon_auto_massage_neck_shoulder.png"
+                            alt="Neck & Shoulder" />
                         <div class="label">NECK & SHOULDER</div>
                     </div>
                     <div class="ReEpic_autoMassageItem">
-                        <img id="img-25" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Epic_icon_auto_massage_waist_hip.png" alt="Waist & Hip" />
+                        <img id="img-25"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/25.Epic_icon_auto_massage_waist_hip.png"
+                            alt="Waist & Hip" />
                         <div class="label">WAIST & HIP</div>
                     </div>
                 </div>
             </div>
 
+            <!-- 6 Manual Massage Modes -->
             <div class="ReEpic_manualMassageModes">
                 <div class="ReEpic_manualMassageTitle">6 MANUAL MASSAGE MODES</div>
 
                 <div class="ReEpic_manualMassageGrid">
                     <div class="ReEpic_manualMassageItem">
-                        <img id="img-26" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Epic_icon_manual_massage_kneading.png" alt="Kneading" />
+                        <img id="img-26"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/26.Epic_icon_manual_massage_kneading.png"
+                            alt="Kneading" />
                         <div class="label">KNEADING</div>
                     </div>
                     <div class="ReEpic_manualMassageItem">
-                        <img id="img-27" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Epic_icon_manual_massage_knocking.png" alt="Knocking" />
+                        <img id="img-27"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/27.Epic_icon_manual_massage_knocking.png"
+                            alt="Knocking" />
                         <div class="label">KNOCKING</div>
                     </div>
                     <div class="ReEpic_manualMassageItem">
-                        <img id="img-28" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Epic_icon_manual_massage_shiatsu.png" alt="Shiatsu" />
+                        <img id="img-28"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/28.Epic_icon_manual_massage_shiatsu.png"
+                            alt="Shiatsu" />
                         <div class="label">SHIATSU</div>
                     </div>
                     <div class="ReEpic_manualMassageItem">
-                        <img id="img-29" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Epic_icon_manual_massage_tapping.png" alt="Tapping" />
+                        <img id="img-29"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/29.Epic_icon_manual_massage_tapping.png"
+                            alt="Tapping" />
                         <div class="label">TAPPING</div>
                     </div>
                     <div class="ReEpic_manualMassageItem">
-                        <img id="img-30" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Epic_icon_manual_massage_swedish.png" alt="Swedish" />
+                        <img id="img-30"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/30.Epic_icon_manual_massage_swedish.png"
+                            alt="Swedish" />
                         <div class="label">SWEDISH</div>
                     </div>
                     <div class="ReEpic_manualMassageItem">
-                        <img id="img-31" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Epic_icon_manual_massage_rolling.png" alt="Rolling" />
+                        <img id="img-31"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/31.Epic_icon_manual_massage_rolling.png"
+                            alt="Rolling" />
                         <div class="label">ROLLING</div>
                     </div>
                 </div>
@@ -359,8 +441,11 @@
 
         </div>
 
+        <!-- Foot & Calf Massage / Ultra Long Extension -->
         <div class="ReEpic_overlaySection ReEpic_overlayImageWrapper">
-            <img id="img-32" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Epic_foot_calf_massage_footrest_extension.png?v=1745957458" alt="Foot & Calf Massage" class="ReEpic_overlayImage">
+            <img id="img-32"
+                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/32.Epic_foot_calf_massage_footrest_extension.png?v=1745957458"
+                alt="Foot & Calf Massage" class="ReEpic_overlayImage">
 
             <div class="ReEpic_overlayTextBlock">
                 <div class="ReEpic_overlayText">
@@ -407,14 +492,19 @@
                 </div>
             </div>
             <div class="ReEpic_quickAccessImage">
-                <img id="img-33" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Epic_side_controller-1.png" alt="Quick Access Panel" class="ReEpic_quickAccessImage" />
+                <img id="img-33"
+                    src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/33.Epic_side_controller-1.png"
+                    alt="Quick Access Panel" class="ReEpic_quickAccessImage" />
             </div>
         </div>
 
         <div class="ReEpic_lastSection">
+            <!-- Wireless Charger + USB Charger -->
             <div class="ReEpic_dualFeatureWrapper">
                 <div class="ReEpic_featurePair">
-                    <img id="img-34" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Epic_wireless_charger.png?v=1745957458" alt="Wireless Charger" />
+                    <img id="img-34"
+                        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/34.Epic_wireless_charger.png?v=1745957458"
+                        alt="Wireless Charger" />
                     <div class="textBlock">
                         <div class="chargerText">
                             <span class="title"><strong>Wireless Charger.</strong></span>
@@ -425,7 +515,9 @@
                     </div>
                 </div>
                 <div class="ReEpic_featurePair">
-                    <img id="img-35" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Epic_USB.png?v=1745957458" alt="USB Charger" />
+                    <img id="img-35"
+                        src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/35.Epic_USB.png?v=1745957458"
+                        alt="USB Charger" />
                     <div class="textBlock">
                         <div class="desc">
                             <span class="title"><strong>USB Charger.</strong></span>
@@ -437,11 +529,14 @@
                 </div>
             </div>
 
+            <!-- Bluetooth Speaker + LED -->
             <div class="ReEpic_lastBox">
                 <div class="ReEpic_whiteBox">
                     <div class="ReEpic_infoBlock">
                         <div class="ReEpic_infoImage">
-                            <img id="img-36" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Epic_bluetooth_speaker-1.png?v=1745957457" alt="Bluetooth Speakers" />
+                            <img id="img-36"
+                                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/36.Epic_bluetooth_speaker-1.png?v=1745957457"
+                                alt="Bluetooth Speakers" />
                         </div>
                         <div class="ReEpic_infoText">
                             <div class="title">
@@ -460,7 +555,9 @@
                 <div class="ReEpic_whiteBox">
                     <div class="ReEpic_infoBlock">
                         <div class="ReEpic_infoImage">
-                            <img id="img-37" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Epic_LED-1.png?v=1745957457" alt="LED Lighting" />
+                            <img id="img-37"
+                                src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/37.Epic_LED-1.png?v=1745957457"
+                                alt="LED Lighting" />
                         </div>
                         <div class="ReEpic_infoText">
                             <div class="title">
@@ -476,15 +573,22 @@
                 </div>
             </div>
 
+            <!-- Dimension -->
             <div class="ReEpic_dimensionSection">
                 <div class="ReEpic_manualMassageTitle">DIMENSION</div>
                 <div class="ReEpic_dimensionLayout">
                     <div class="ReEpic_dimensionLeft">
-                        <img id="img-38" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Epic_dimension_front.png?v=1745957458" alt="Dimension Front" />
+                        <img id="img-38"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/38.Epic_dimension_front.png?v=1745957458"
+                            alt="Dimension Front" />
                     </div>
                     <div class="ReEpic_dimensionRight">
-                        <img id="img-39" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Epic_dimension_side.png" alt="Dimension Side" />
-                        <img id="img-40" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Epic_dimension_ZG.png" alt="Dimension Zero-Gravity" />
+                        <img id="img-39"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/39.Epic_dimension_side.png"
+                            alt="Dimension Side" />
+                        <img id="img-40"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/40.Epic_dimension_ZG.png"
+                            alt="Dimension Zero-Gravity" />
                     </div>
                 </div>
             </div>
@@ -494,7 +598,9 @@
                 <div class="ReEpic_manualMassageTitle">MINIMUM DOORWAY</div>
                 <div class="ReEpic_doorwayWrapper">
                     <div class="ReEpic_doorwayImage">
-                        <img id="img-41" src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Epic_minimum_doorway.png" alt="Minimum Doorway" />
+                        <img id="img-41"
+                            src="https://cdn.shopify.com/s/files/1/0086/1297/0558/files/41.Epic_minimum_doorway.png"
+                            alt="Minimum Doorway" />
                     </div>
                     <div class="ReEpic_doorwayText">
                         <div class="guideTitle"><strong>Measuring Guide</strong></div>
@@ -618,7 +724,7 @@
 
     </div>
 
-    <script src="ReEpic_script.js?v=20250501"></script>
+    <script src="ReEpic_script.js?v=20250429"></script>
 
 </body>
 
