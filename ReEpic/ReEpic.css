@@ -580,11 +580,10 @@
   justify-content: center;
   max-width: 100%;
   background-color: #f1f1f2;
-  padding: 3rem 0;
 }
 
 .ReEpic_NSWrapper {
-  margin: 5rem 0;
+  margin: 5rem 2rem;
   background-color: #fff;
   border-radius: 20px;
   max-width: 96%;
