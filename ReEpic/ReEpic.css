@@ -584,9 +584,10 @@
 }
 
 .ReEpic_NSWrapper {
+  margin: 5rem 0;
   background-color: #fff;
   border-radius: 20px;
-  max-width: 90%;
+  max-width: 96%;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
