@@ -605,6 +605,7 @@
   object-fit: contain !important;
   aspect-ratio: auto !important;
   display: block;
+  border-radius: 20px;
 }
 
 
