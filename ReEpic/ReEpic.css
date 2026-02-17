@@ -601,7 +601,7 @@
 .ReEpic_newSection .ReEpic_NS_Block img {
   width: 100% !important;
   height: auto !important;
-  max-width: 480px !important; /* 너 기존 값 유지 */
+  max-width: 480px !important;
   object-fit: contain !important;
   aspect-ratio: auto !important;
   display: block;
@@ -952,7 +952,7 @@
     justify-content: center;
     align-items: center;
   }
-  .ReEpic_NS_Block img {
+  .ReEpic_newSection .ReEpic_NS_Block img {
     max-width: 400px;
     border-radius: 0;
 }
