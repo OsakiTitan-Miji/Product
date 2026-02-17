@@ -598,12 +598,15 @@
   flex-direction: row;
 }
 
-.ReEpic_NS_Block img {
-  max-width: 480px;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
+.ReEpic_newSection .ReEpic_NS_Block img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 480px !important; /* 너 기존 값 유지 */
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+  display: block;
 }
+
 
 .ReEpic_NS_TextBox {
   padding: 5rem;
