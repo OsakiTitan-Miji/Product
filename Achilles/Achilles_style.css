@@ -994,8 +994,15 @@
         padding-right: 0;
     }
 
+    .Achilles_Card--Horizontal--row img,
+    .Achilles_Card--Horizontal--row .textBox{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     .Achilles_Card--Horizontal--row .textBox,
-    Achilles_Card--Horizontal--row1 .textBox,
+    .Achilles_Card--Horizontal--row1 .textBox,
     .Achilles_Card--Horizontal--rowFit .textBox {
         position: static;
         transform: none;
