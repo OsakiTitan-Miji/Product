@@ -1001,7 +1001,9 @@
         text-align: center;
     }
 
-    .Achilles_Card--Horizontal--row1 .Achilles_Text--Robo--Desc {
+    .Achilles_Card--Horizontal--row1 .Achilles_Text--Robo--Desc,
+    .Achilles_Card--Horizontal--row .Achilles_Text--Robo--Desc,
+    .Achilles_Card--RecRow .Achilles_Card--Rectangle .Achilles_Card--Rectangle--TextBox {
         text-align: center;
     }
 
