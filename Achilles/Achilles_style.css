@@ -1001,6 +1001,10 @@
         text-align: center;
     }
 
+    .Achilles_Card--Horizontal--row1 .Achilles_Text--Robo--Desc {
+        text-align: center;
+    }
+
     .Achilles_Card--Horizontal--row .textBox,
     .Achilles_Card--Horizontal--row1 .textBox,
     .Achilles_Card--Horizontal--rowFit .textBox {
